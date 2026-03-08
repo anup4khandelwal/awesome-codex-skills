@@ -6,16 +6,12 @@ Labels: good first issue, help wanted
 Provide example k6 scenarios for backend skills.
 
 ## Scope
-- Update relevant files under skills/.
-- Keep changes focused and minimal.
-- Preserve required SKILL.md section format.
+- Add sample load-test prompts and scripts guidance.
+- Focus on API and background-job flows.
+- Keep examples framework-agnostic.
 
 ## Acceptance Criteria
-- [ ] Changes are limited to the intended scope.
+- [ ] At least 3 backend skills are improved.
+- [ ] Examples include measurable targets.
 - [ ] bash scripts/validate-skills.sh passes.
-- [ ] Markdown remains clear and actionable.
 - [ ] PR includes before/after summary.
-
-## Suggested Starting Point
-- Search target files: rg --files skills
-- Inspect current content: rg "Example prompts|Guardrails|Limitations" skills

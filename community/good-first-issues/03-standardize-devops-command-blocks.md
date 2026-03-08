@@ -6,16 +6,12 @@ Labels: good first issue, help wanted
 Ensure DevOps skills include reproducible command snippets.
 
 ## Scope
-- Update relevant files under skills/.
-- Keep changes focused and minimal.
-- Preserve required SKILL.md section format.
+- Update skills under skills/devops/.
+- Standardize command examples for clarity.
+- Avoid destructive commands.
 
 ## Acceptance Criteria
-- [ ] Changes are limited to the intended scope.
+- [ ] Command examples are consistent across DevOps skills.
+- [ ] Commands are safe and reproducible.
 - [ ] bash scripts/validate-skills.sh passes.
-- [ ] Markdown remains clear and actionable.
 - [ ] PR includes before/after summary.
-
-## Suggested Starting Point
-- Search target files: rg --files skills
-- Inspect current content: rg "Example prompts|Guardrails|Limitations" skills

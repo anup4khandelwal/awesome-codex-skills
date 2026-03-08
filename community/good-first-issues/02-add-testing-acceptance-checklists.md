@@ -6,16 +6,12 @@ Labels: good first issue, help wanted
 Add deterministic acceptance criteria across testing skills.
 
 ## Scope
-- Update relevant files under skills/.
-- Keep changes focused and minimal.
+- Update testing skills under skills/testing/.
+- Keep checklist language concise and verifiable.
 - Preserve required SKILL.md section format.
 
 ## Acceptance Criteria
-- [ ] Changes are limited to the intended scope.
+- [ ] Checklists are specific and testable.
 - [ ] bash scripts/validate-skills.sh passes.
-- [ ] Markdown remains clear and actionable.
+- [ ] Changes cover at least 5 testing skills.
 - [ ] PR includes before/after summary.
-
-## Suggested Starting Point
-- Search target files: rg --files skills
-- Inspect current content: rg "Example prompts|Guardrails|Limitations" skills
