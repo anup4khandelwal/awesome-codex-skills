@@ -1,5 +1,7 @@
 # 100-codex-skills-for-ai-engineers
 
+[![Quality](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml) [![Release](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
+
 Reusable, production-ready Codex Skills for AI coding agents automating complex engineering workflows.
 
 ## What Codex Skills Are
