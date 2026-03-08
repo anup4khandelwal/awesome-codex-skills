@@ -34,7 +34,7 @@ for dir in $skill_dirs; do
   skill_file="$dir/SKILL.md"
   if [ -f "$skill_file" ]; then
     for section in "${required_sections[@]}"; do
-      if ! rg -q "^${section}$" "$skill_file"; then
+      if ! grep -Fxq "$section" "$skill_file"; then
         echo "[ERROR] Missing section '$section' in $skill_file"
         errors=$((errors + 1))
       fi
