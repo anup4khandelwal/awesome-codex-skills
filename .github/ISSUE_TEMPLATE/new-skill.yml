@@ -1,0 +1,48 @@
+name: New Skill
+about: Propose a brand-new skill to add to the catalog
+labels: ["enhancement", "new-skill"]
+body:
+  - type: input
+    id: skill_name
+    attributes:
+      label: Skill name
+      placeholder: e.g., prompt-cache-optimizer
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - codebase
+        - testing
+        - devops
+        - ai-engineering
+        - security
+        - data
+        - frontend
+        - backend
+        - productivity
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem this skill solves
+      description: Describe the engineering workflow pain-point.
+    validations:
+      required: true
+  - type: textarea
+    id: i_o
+    attributes:
+      label: Required inputs and expected outputs
+      description: Provide machine-actionable inputs/outputs.
+    validations:
+      required: true
+  - type: textarea
+    id: guardrails
+    attributes:
+      label: Guardrails and limitations
+      description: List safety constraints and known limits.
+    validations:
+      required: true

@@ -1,0 +1,32 @@
+name: Skill Improvement
+about: Suggest improvements to an existing skill
+labels: ["enhancement", "skill-improvement"]
+body:
+  - type: input
+    id: skill_path
+    attributes:
+      label: Skill path
+      placeholder: skills/<category>/<skill-name>
+    validations:
+      required: true
+  - type: textarea
+    id: current_gap
+    attributes:
+      label: Current gap
+      description: What is missing or weak in the current skill?
+    validations:
+      required: true
+  - type: textarea
+    id: proposed_change
+    attributes:
+      label: Proposed change
+      description: Explain exactly what should be updated.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Validation plan
+      description: How should we verify the improvement works?
+    validations:
+      required: true
