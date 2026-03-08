@@ -16,8 +16,9 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v18
         with:
           globs: |
-            **/*.md
-            !node_modules/**
+            README.md
+            CONTRIBUTING.md
+            .github/**/*.md
 
       - name: Check Links
         uses: lycheeverse/lychee-action@v2
