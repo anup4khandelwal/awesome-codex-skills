@@ -223,3 +223,26 @@ See `CONTRIBUTING.md` for contribution standards and PR expectations.
 ## License
 
 MIT (`LICENSE`)
+
+## Docs Site
+
+A VitePress docs scaffold is available in `docs-site/`.
+
+```bash
+cd docs-site
+npm install
+npm run docs:dev
+```
+
+## Benchmarks
+
+Benchmark templates are available in `benchmarks/` to compare baseline prompts vs skill-guided prompts.
+
+## Open Good First Issues
+
+Use the automation script below to create all issue drafts in GitHub:
+
+```bash
+DRY_RUN=1 bash scripts/open-good-first-issues.sh
+DRY_RUN=0 bash scripts/open-good-first-issues.sh
+```

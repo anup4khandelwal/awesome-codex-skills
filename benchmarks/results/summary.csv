@@ -1,0 +1,4 @@
+task_id,skill,baseline_minutes,skill_minutes,baseline_quality,skill_quality,notes
+TASK-001,repo-explainer,,,,,
+TASK-002,unit-test-generator,,,,,
+TASK-003,github-actions-generator,,,,,
