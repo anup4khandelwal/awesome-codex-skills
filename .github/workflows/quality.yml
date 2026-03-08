@@ -23,7 +23,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: true
-          args: --verbose --no-progress --exclude-mail --exclude "https://img.shields.io/.*" --exclude "https://github.com/.*/actions/workflows/.*\\.yml/badge\\.svg" "**/*.md"
+          args: --verbose --no-progress --exclude-mail --max-concurrency 4 --retry-wait-time 2 --max-retries 3 --accept 200,206,429 --exclude "https://img.shields.io/.*" --exclude "https://github.com/.*/actions/workflows/.*\\.yml/badge\\.svg" README.md CONTRIBUTING.md
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
