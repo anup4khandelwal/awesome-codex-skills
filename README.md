@@ -2,18 +2,59 @@
 
 [![Quality](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml) [![Release](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-Reusable, production-ready Codex Skills for AI coding agents automating complex engineering workflows.
+Production-ready Codex Skills for AI agents shipping real software across Node.js, TypeScript, Python, LangGraph, DevOps, RAG, frontend, backend, and security workflows.
+
+If this saves you time, please star the repo to help more AI engineers find it.
+
+## Start in 60 Seconds
+
+1. Pick a skill from `skills/<category>/<skill-name>/`.
+2. Copy one of the prompts from that skill's `examples.md`.
+3. Run it in your agent and validate with your repo tests/CI.
+
+### Copy-Paste Prompts
+
+```text
+/skill repo-explainer
+Analyze this repository architecture and return a prioritized refactor map.
+```
+
+```text
+/skill rag-pipeline-builder
+Design a production-ready RAG pipeline with evaluation and guardrails.
+```
+
+```text
+/skill github-actions-generator
+Generate CI workflows for lint, test, build, and release with safe defaults.
+```
+
+## Most Useful Skills to Start With
+
+- `repo-explainer` (codebase understanding)
+- `unit-test-generator` (fast confidence)
+- `github-actions-generator` (CI automation)
+- `rag-pipeline-builder` (LLM product workflows)
+- `dependency-vulnerability-scanner` (security baseline)
 
 ## What Codex Skills Are
-Codex Skills are reusable workflow specifications that tell an AI agent when to apply a capability, what inputs to request, what outputs to produce, what tools to run, and what guardrails to enforce.
+
+Codex Skills are reusable workflow specifications that tell an AI agent:
+- when to apply a capability,
+- required inputs,
+- expected outputs,
+- tools/commands to run,
+- guardrails and limitations.
 
 ## Why They Are Useful
-- Standardize high-value engineering workflows
-- Reduce prompt ambiguity and execution variance
-- Improve safety and quality with explicit guardrails
-- Speed up agentic system development and onboarding
 
-## Categories of Skills
+- Standardize high-value engineering workflows
+- Reduce prompt ambiguity and output variance
+- Improve safety and quality with explicit guardrails
+- Speed up onboarding for agentic engineering systems
+
+## Categories
+
 - Codebase (12)
 - Testing (10)
 - DevOps (11)
@@ -26,6 +67,7 @@ Codex Skills are reusable workflow specifications that tell an AI agent when to 
 - Total (100)
 
 ## Repository Layout
+
 - `skills/<category>/<skill-name>/`
 - `codebase/`
 - `testing/`
@@ -36,6 +78,8 @@ Codex Skills are reusable workflow specifications that tell an AI agent when to 
 - `frontend/`
 - `backend/`
 - `productivity/`
+- `examples/` (before/after showcases)
+- `community/good-first-issues/` (issue drafts)
 
 Each skill includes:
 - `SKILL.md`
@@ -44,6 +88,7 @@ Each skill includes:
 - `scripts/`
 
 ## Example Usage
+
 ```text
 /skill repo-explainer
 ```
@@ -52,7 +97,16 @@ Each skill includes:
 /skill rag-pipeline-builder
 ```
 
+## Before/After Showcases
+
+See [examples/README.md](examples/README.md) for 10 practical examples.
+
+## Good First Issues
+
+See [community/good-first-issues](community/good-first-issues) for 10 ready-to-open issue drafts.
+
 ## Skill Index
+
 | Category | Skill | Purpose |
 |---|---|---|
 | ai-engineering | `agent-memory-designer` | Agent Memory Designer: Implements robust LLM and agent workflows with controls and evaluation. |
@@ -157,7 +211,15 @@ Each skill includes:
 | testing | `unit-test-generator` | Unit Test Generator: Designs and automates reliable tests with measurable confidence. |
 
 ## Contribution Guide
+
 See `CONTRIBUTING.md` for contribution standards and PR expectations.
 
+## Follow Updates
+
+- Watch this repository for releases
+- Check `Releases` for weekly improvements
+- Open issues for missing high-impact skills
+
 ## License
+
 MIT (`LICENSE`)
