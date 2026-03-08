@@ -27,13 +27,11 @@ That means better reliability, less prompt drift, and faster delivery.
 
 ## Try it
 
-```text
+Sample prompt 1:
 /skill repo-explainer
-```
 
-```text
+Sample prompt 2:
 /skill rag-pipeline-builder
-```
 
 Repo: https://github.com/anup4khandelwal/awesome-codex-skills
 
