@@ -2,9 +2,27 @@
 
 [![Quality](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/quality.yml) [![Release](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml/badge.svg)](https://github.com/anup4khandelwal/awesome-codex-skills/actions/workflows/release.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](./CONTRIBUTING.md)
 
-Production-ready Codex Skills for AI agents shipping real software across Node.js, TypeScript, Python, LangGraph, DevOps, RAG, frontend, backend, and security workflows.
+100 reusable AI coding skills that help engineering teams ship faster with AI agents.
+
+Production-ready Codex Skills for real software workflows across Node.js, TypeScript, Python, LangGraph, DevOps, RAG, frontend, backend, data, and security.
 
 If this saves you time, please star the repo to help more AI engineers find it.
+
+## Why Star This Repo
+
+- Immediate copy-paste prompts for high-impact engineering workflows
+- Consistent skill schema with guardrails and limitations
+- Active updates with benchmarks, examples, and contributor issues
+
+## Measured Impact (Template)
+
+| Task | Baseline Time | Skill-Guided Time | Quality Delta |
+|---|---|---|---|
+| Add unit tests to legacy module | 90m | 30m | +35% |
+| Set up CI pipeline | 120m | 45m | +40% |
+| Build first RAG baseline | 180m | 70m | +45% |
+
+Replace the sample values with your real benchmark results from `benchmarks/`.
 
 ## Start in 60 Seconds
 
