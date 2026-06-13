@@ -8,10 +8,13 @@ for url in \
   "https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper"
 do
   code="$(curl -L -s -o /dev/null -w "%{http_code}" "$url")"
-  if [ "$code" -lt 200 ] || [ "$code" -ge 400 ]; then
-    printf '%s %s\n' "$code" "$url" >&2
-    exit 1
-  fi
+  case "$code" in
+    2*|3*) ;;
+    *)
+      printf 'FAIL %s %s\n' "$code" "$url" >&2
+      exit 1
+      ;;
+  esac
 done
 
 printf 'Xquik reference links are reachable.\n'
