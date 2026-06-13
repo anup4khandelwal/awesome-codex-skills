@@ -17,7 +17,7 @@ If this saves you time, please star the repo to help more AI engineers find it.
 ## Measured Impact (Template)
 
 | Task | Baseline Time | Skill-Guided Time | Quality Delta |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Add unit tests to legacy module | 90m | 30m | +35% |
 | Set up CI pipeline | 120m | 45m | +40% |
 | Build first RAG baseline | 180m | 70m | +45% |
@@ -78,11 +78,11 @@ Codex Skills are reusable workflow specifications that tell an AI agent:
 - DevOps (11)
 - AI Engineering (16)
 - Security (10)
-- Data (9)
+- Data (10)
 - Frontend (10)
 - Backend (11)
 - Productivity (11)
-- Total (100)
+- Total (101)
 
 ## Repository Layout
 
@@ -126,7 +126,7 @@ See [community/good-first-issues](community/good-first-issues) for 10 ready-to-o
 ## Skill Index
 
 | Category | Skill | Purpose |
-|---|---|---|
+| --- | --- | --- |
 | ai-engineering | `agent-memory-designer` | Agent Memory Designer: Implements robust LLM and agent workflows with controls and evaluation. |
 | ai-engineering | `agent-observability-setup` | Agent Observability Setup: Implements robust LLM and agent workflows with controls and evaluation. |
 | ai-engineering | `ai-guardrails-generator` | Ai Guardrails Generator: Implements robust LLM and agent workflows with controls and evaluation. |
@@ -175,6 +175,7 @@ See [community/good-first-issues](community/good-first-issues) for 10 ready-to-o
 | data | `sql-query-optimizer` | Sql Query Optimizer: Designs trusted data pipelines, schemas, and quality checks. |
 | data | `stream-processing-designer` | Stream Processing Designer: Designs trusted data pipelines, schemas, and quality checks. |
 | data | `warehouse-model-builder` | Warehouse Model Builder: Designs trusted data pipelines, schemas, and quality checks. |
+| data | `x-twitter-scraper` | X Twitter Scraper: Collects, monitors, and validates public X/Twitter data through Xquik MCP and REST workflows. |
 | devops | `ci-cd-pipeline-builder` | Ci Cd Pipeline Builder: Builds CI/CD, deployment, and reliability automation for production. |
 | devops | `dockerfile-generator` | Dockerfile Generator: Builds CI/CD, deployment, and reliability automation for production. |
 | devops | `github-actions-generator` | Github Actions Generator: Builds CI/CD, deployment, and reliability automation for production. |

@@ -42,7 +42,7 @@ for dir in $skill_dirs; do
   fi
 done
 
-expected=100
+expected=101
 actual=$(find "$root" -mindepth 2 -maxdepth 2 -type d | wc -l | tr -d ' ')
 if [ "$actual" -ne "$expected" ]; then
   echo "[ERROR] Expected $expected skills, found $actual"
