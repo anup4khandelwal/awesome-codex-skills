@@ -2,7 +2,7 @@
 x-twitter-scraper
 
 ## 2. Description
-X Twitter Scraper: Uses Xquik to collect, monitor, and validate public X/Twitter data through documented MCP and REST interfaces.
+X Twitter Scraper: Uses Xquik to collect, monitor, and validate public X/Twitter data through documented MCP and REST interfaces. Official documentation is available at [docs.xquik.com](https://docs.xquik.com), and the public skill source is available in the [Xquik-dev repository](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper).
 
 ## 3. When the AI agent should use this skill
 Use this skill when a workflow needs public X/Twitter search results, profile context, follower exports, media downloads, keyword or account monitoring, or source-backed social data packets.
@@ -26,12 +26,13 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 2. Map the request to a supported Xquik data workflow.
 3. Review the public Xquik docs or skill repository before constructing requests.
 4. Use MCP for agent-native exploration or REST API for deterministic automation.
-5. Read API keys from environment variables or secret stores and never print them.
-6. Normalize results into the requested output format.
-7. Preserve source links, timestamps, query terms, and assumptions.
-8. Require explicit user approval before any write action.
-9. Run lightweight validation such as link checks, response shape checks, and duplicate detection.
-10. Summarize coverage limits and unresolved follow-up work.
+5. Read API keys from `XQUIK_API_KEY` or an approved secret store and never print them.
+6. Verify that no key value is written to tracked files, shell history, logs, or output strings.
+7. Normalize results into the requested output format.
+8. Preserve source links, timestamps, query terms, and assumptions.
+9. Require explicit user approval before any write action.
+10. Run lightweight validation such as link checks, response shape checks, and duplicate detection.
+11. Summarize coverage limits and unresolved follow-up work.
 
 ## 7. Commands or tools used
 - curl
@@ -70,4 +71,5 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - Live X/Twitter data can change between collection and review.
 - API access, rate limits, and account permissions affect available results.
 - Some workflows require an API key that the agent must keep out of logs.
+- Terms, privacy, consent, and publication requirements can block collection or reuse.
 - Human review may still be needed for policy, consent, or publication decisions.
