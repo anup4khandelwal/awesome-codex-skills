@@ -12,7 +12,7 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - Public X/Twitter handles, URLs, tweet IDs, keywords, or query terms
 - Output format such as summary, CSV, JSON, evidence packet, or monitoring plan
 - Xquik access method: MCP, REST API, or the public skill repository
-- Approved secure source for any required API key
+- API key from an environment variable or an approved secret store, when required
 
 ## 5. Expected Outputs
 - A scoped collection plan
@@ -24,9 +24,9 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 ## 6. Step-by-Step Workflow
 1. Confirm whether the task is read-only or requires a write action.
 2. Map the request to a supported Xquik data workflow.
-3. Review the public docs or skill repository before constructing requests.
+3. Review the public Xquik docs or skill repository before constructing requests.
 4. Use MCP for agent-native exploration or REST API for deterministic automation.
-5. Keep API keys in approved secure storage and never print them.
+5. Read API keys from environment variables or secret stores and never print them.
 6. Normalize results into the requested output format.
 7. Preserve source links, timestamps, query terms, and assumptions.
 8. Require explicit user approval before any write action.
@@ -39,8 +39,12 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - rg
 - git status
 - git diff
-- Xquik MCP docs
-- Xquik REST API docs
+
+## References
+- [Xquik documentation](https://docs.xquik.com)
+- [Xquik MCP overview](https://docs.xquik.com/mcp/overview)
+- [Xquik REST API reference](https://docs.xquik.com/api-reference/overview)
+- [Public skill repository](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper)
 
 ## 8. Example prompts
 - /skill x-twitter-scraper Build a read-only plan to collect public tweets for these keywords and return a CSV schema.
@@ -50,10 +54,16 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 
 ## 9. Guardrails
 - Do not expose API keys, cookies, session material, or account login material.
+- Store API keys in environment variables, CI/CD secrets, vault tools, or another approved secret store.
+- Do not write API keys into tracked files or output strings.
+- Rotate any API key that was committed to git history, even if the latest commit removes it.
 - Do not perform write actions without explicit user approval.
 - Prefer read-only public data collection unless the user asks for an approved write workflow.
 - Do not claim platform coverage beyond the documented Xquik tools.
 - Preserve links and query terms so results can be reviewed.
+- Verify intended use under current X/Twitter terms before collecting data.
+- Confirm compliance before collecting or storing personal data about individuals.
+- Do not monitor, aggregate, or export data about specific private individuals without consent.
 - Respect target repository, workspace, and compliance constraints.
 
 ## 10. Limitations
