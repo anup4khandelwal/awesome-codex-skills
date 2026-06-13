@@ -24,7 +24,7 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 ## 6. Step-by-Step Workflow
 1. Confirm whether the task is read-only or requires a write action.
 2. Map the request to a supported Xquik data workflow.
-3. Review the public Xquik docs or skill repository before constructing requests.
+3. Review the [Xquik documentation](https://docs.xquik.com), [MCP overview](https://docs.xquik.com/mcp/overview), [REST API reference](https://docs.xquik.com/api-reference/overview), or [public skill repository](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper) before constructing requests.
 4. Use MCP for agent-native exploration or REST API for deterministic automation.
 5. Read API keys from `XQUIK_API_KEY` or an approved secret store and never print them.
 6. Verify that no key value is written to tracked files, shell history, logs, or output strings.
@@ -62,9 +62,11 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - Prefer read-only public data collection unless the user asks for an approved write workflow.
 - Do not claim platform coverage beyond the documented Xquik tools.
 - Preserve links and query terms so results can be reviewed.
-- Verify intended use under current X/Twitter terms before collecting data.
-- Confirm compliance before collecting or storing personal data about individuals.
+- Verify intended use under current X/Twitter terms, applicable privacy law, and target workspace policies before collecting or exporting data.
+- Collect the minimum public data needed for the approved task and avoid sensitive personal data.
 - Do not monitor, aggregate, or export data about specific private individuals without consent.
+- Do not support doxxing, stalking, harassment, impersonation, surveillance, platform-rate-limit evasion, or other OSINT misuse.
+- Honor deletion, consent, and data-retention requirements when storing or sharing results.
 - Respect target repository, workspace, and compliance constraints.
 
 ## 10. Limitations
