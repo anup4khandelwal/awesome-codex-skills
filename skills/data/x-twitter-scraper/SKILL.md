@@ -12,7 +12,7 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - Public X/Twitter handles, URLs, tweet IDs, keywords, or query terms
 - Output format such as summary, CSV, JSON, evidence packet, or monitoring plan
 - Xquik access method: MCP, REST API, or the public skill repository
-- API key from an environment variable or an approved secret store, when required
+- API key from `XQUIK_API_KEY`, a gitignored `.env` file, CI/CD secrets, vault tooling, or another approved secret store, when required
 
 ## 5. Expected Outputs
 - A scoped collection plan
@@ -26,7 +26,7 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 2. Map the request to a supported Xquik data workflow.
 3. Review the [Xquik documentation](https://docs.xquik.com), [MCP overview](https://docs.xquik.com/mcp/overview), [REST API reference](https://docs.xquik.com/api-reference/overview), or [public skill repository](https://github.com/Xquik-dev/x-twitter-scraper/tree/master/skills/x-twitter-scraper) before constructing requests.
 4. Use MCP for agent-native exploration or REST API for deterministic automation.
-5. Read API keys from `XQUIK_API_KEY` or an approved secret store and never print them.
+5. Read API keys from `XQUIK_API_KEY`, a gitignored `.env` file, CI/CD secrets, vault tooling, or another approved secret store and never print them.
 6. Verify that no key value is written to tracked files, shell history, logs, or output strings.
 7. Normalize results into the requested output format.
 8. Preserve source links, timestamps, query terms, and assumptions.
@@ -55,8 +55,8 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 
 ## 9. Guardrails
 - Do not expose API keys, cookies, session material, or account login material.
-- Store API keys in environment variables, CI/CD secrets, vault tools, or another approved secret store.
-- Do not write API keys into tracked files or output strings.
+- Store API keys in environment variables, gitignored `.env` files, CI/CD secrets, vault tools, or another approved secret store.
+- Do not write API keys into tracked files, inline strings, shell history, logs, or output strings.
 - Rotate any API key that was committed to git history, even if the latest commit removes it.
 - Do not perform write actions without explicit user approval.
 - Prefer read-only public data collection unless the user asks for an approved write workflow.
@@ -74,4 +74,5 @@ Use this skill when a workflow needs public X/Twitter search results, profile co
 - API access, rate limits, and account permissions affect available results.
 - Some workflows require an API key that the agent must keep out of logs.
 - Terms, privacy, consent, and publication requirements can block collection or reuse.
+- Unauthorized scraping, retention, publication, or surveillance can violate platform terms or law and may require legal or compliance review.
 - Human review may still be needed for policy, consent, or publication decisions.
