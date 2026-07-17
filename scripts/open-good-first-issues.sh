@@ -5,21 +5,23 @@ ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 ISSUE_DIR="$ROOT_DIR/community/good-first-issues"
 DRY_RUN="${DRY_RUN:-1}"
 
-if ! command -v gh >/dev/null 2>&1; then
-  echo "gh CLI is required. Install from https://cli.github.com/"
-  exit 1
-fi
-
 cd "$ROOT_DIR"
 
-if ! gh auth status >/dev/null 2>&1; then
-  echo "gh CLI is not authenticated. Run: gh auth login"
-  exit 1
-fi
+if [ "$DRY_RUN" != "1" ]; then
+  if ! command -v gh >/dev/null 2>&1; then
+    echo "gh CLI is required. Install from https://cli.github.com/"
+    exit 1
+  fi
 
-for label in "good first issue" "help wanted"; do
-  gh label create "$label" --color "0e8a16" --description "Community contribution task" --force >/dev/null 2>&1 || true
-done
+  if ! gh auth status >/dev/null 2>&1; then
+    echo "gh CLI is not authenticated. Run: gh auth login"
+    exit 1
+  fi
+
+  for label in "good first issue" "help wanted"; do
+    gh label create "$label" --color "0e8a16" --description "Community contribution task" --force >/dev/null 2>&1 || true
+  done
+fi
 
 count=0
 for file in "$ISSUE_DIR"/[0-9][0-9]-*.md; do
